@@ -1,0 +1,22 @@
+uuid: 6f90e831-50e8-4234-9d30-1e0792e582a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: article_friendly_url
+label: 'Article Friendly URL'
+type: 'canonical_entities:node'
+pattern: 'article/[node:title]'
+selection_criteria:
+  7e447d33-2ae7-4ac5-a638-6a76a7d9a2aa:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 7e447d33-2ae7-4ac5-a638-6a76a7d9a2aa
+selection_logic: and
+weight: -5
+relationships: {  }
