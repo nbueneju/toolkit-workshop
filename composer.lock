@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca6fcbc53c2ed970b3012173136af5c3",
+    "content-hash": "9f4b50cf0cb19c4234570565905ebae9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3584,9 +3584,14 @@
         {
             "name": "openeuropa/oe_theme",
             "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/openeuropa/oe_theme.git",
+                "reference": "a7c98c5145310b05889bad9fbeb732a58cc2e320"
+            },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/openeuropa/oe_theme/releases/download/2.8.0/oe_theme-2.8.0.tar.gz",
+                "url": "https://api.github.com/repos/openeuropa/oe_theme/zipball/a7c98c5145310b05889bad9fbeb732a58cc2e320",
                 "reference": "a7c98c5145310b05889bad9fbeb732a58cc2e320",
                 "shasum": ""
             },
@@ -7256,6 +7261,11 @@
                 "phpunit/phpunit": "~6.0 || ~7.0"
             },
             "type": "library",
+            "extra": {
+                "patches_applied": {
+                    "allow-date-only-date-fields": "https://patch-diff.githubusercontent.com/raw/jhedstrom/DrupalDriver/pull/201.patch"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Drupal\\Driver": "src/",
