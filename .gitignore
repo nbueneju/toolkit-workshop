@@ -16,3 +16,4 @@
 /grumphp.yml
 /runner.yml
 /docker-compose.*.yml
+/*.sql

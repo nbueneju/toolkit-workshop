@@ -18,6 +18,7 @@ selenium:
   browser: "chrome"
 
 toolkit:
+  project_id: "workshop2"
   build:
     dist:
       commands:
